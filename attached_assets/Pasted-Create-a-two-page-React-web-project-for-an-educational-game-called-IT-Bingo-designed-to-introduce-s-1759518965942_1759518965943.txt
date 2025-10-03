@@ -1,0 +1,177 @@
+Create a two-page React web project for an educational game called IT Bingo, designed to introduce students to different IT study fields at VOCO (Tartu Vocational College).
+
+👉 Important:
+
+The entire project must be frontend-only.
+
+No databases, no backend – all data must be stored in JavaScript objects/arrays in the frontend.
+
+Must include responsive design for both mobile and desktop screens.
+
+Use React + TailwindCSS for UI and styling.
+
+Use lightweight animation (Anime.js, GSAP, or CSS animations) for effects.
+
+📄 Page 1: Home Page
+
+Minimalistic modern design inspired by VOCO branding.
+
+Display the VOCO logo.
+
+Three main buttons:
+
+Play → navigates to the Bingo game page.
+
+Video → opens a popup modal with an embedded YouTube video.
+
+About Us → opens a popup modal with a short description of VOCO.
+
+🎮 Page 2: Game Page (IT Bingo)
+
+A 5x5 Bingo board.
+
+Column headers: IT study fields instead of “BINGO.”
+
+VS (Web Specialist)
+
+UX/UI
+
+ITA (IT Developer)
+
+ITS (IT Systems Specialist)
+
+DT (Digital & Sustainable Technologies)
+
+Each column contains 5 subjects, represented by icons instead of text.
+
+Hovering over an icon → shows subject name (tooltip).
+
+Clicking an icon → opens a popup card with:
+
+Field name
+
+Short subject description
+
+One question with 3 multiple-choice answers
+
+“Bing” sound effect when opening
+
+✅ Answer logic:
+
+Correct → icon square turns green + “ding” sound.
+
+Wrong → icon square turns red + “buzz” sound.
+
+When all 5 subjects in a column are answered correctly:
+
+Display “BINGO – Your best matching study field is [FIELD NAME]!”
+
+Trigger fireworks animation + celebratory sound effect.
+
+📚 Subjects & Icons
+
+VS (Web Specialist)
+
+Java ☕
+
+HTML/CSS 🌐
+
+JavaScript ⚡
+
+Databases 🛢️
+
+Mobile App 📱
+
+UX/UI
+
+User Research 🔍
+
+Wireframing 📐
+
+Prototyping 📱
+
+Testing ✅
+
+Design 🎨
+
+ITA (IT Developer)
+
+Microservices ⚙️
+
+Cloud Services ☁️
+
+Operating Systems 💻
+
+Digital Technology 💾
+
+NoSQL 🔢
+
+ITS (IT Systems Specialist)
+
+Ethical Hacking 🛡️
+
+Computer Networks 🌐
+
+Programming Basics 💻
+
+IT Frameworks 🏗️
+
+Automation ⚙️
+
+DT (Digital & Sustainable Technologies)
+
+Mechanics ⚙️
+
+Robotics 🤖
+
+Artificial Intelligence 🧠
+
+Data Management 📂
+
+Soldering 🔥
+
+🌟 Special Features
+
+Easter Egg:
+
+In Ethical Hacking:
+
+Correct → show happy Timo picture.
+
+Wrong → show angry Timo picture.
+
+Audio & Visual Effects:
+
+Popup opening → “Bing” sound.
+
+Correct → green highlight + “ding.”
+
+Wrong → red highlight + “buzz.”
+
+Bingo → fireworks + festive music.
+
+🎯 Extra Mechanics
+
+Add 3–4 optional quests:
+
+Open at least one subject from each field.
+
+Achieve at least one BINGO.
+
+Discover the hidden Easter Egg.
+
+(Optional) Answer 15+ questions correctly → earn “IT Guru” title.
+
+🛠️ Technical Notes
+
+Use React functional components.
+
+Use TailwindCSS (or Bootstrap if necessary).
+
+Use modals with semi-transparent background for popups.
+
+Use CSS animations or Anime.js/GSAP for transitions and fireworks.
+
+Must run entirely in the browser (npm start) – no backend, no DB.
+
+Fully responsive layout (desktop, tablet, mobile).
