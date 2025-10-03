@@ -13,7 +13,7 @@ export interface Subject {
 
 export const fields = [
   { id: "vs", name: "VS", fullName: "Web Specialist" },
-  { id: "uxui", name: "UX/UI", fullName: "UX/UI Designer" },
+  { id: "uxui", name: "UX/UI", fullName: "User Experience & User Interface" },
   { id: "ita", name: "ITA", fullName: "IT Developer" },
   { id: "its", name: "ITS", fullName: "IT Systems Specialist" },
   { id: "dt", name: "DT", fullName: "Digital & Sustainable Technologies" },
