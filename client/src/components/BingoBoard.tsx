@@ -27,11 +27,11 @@ export default function BingoBoard({ gameState, onCellClick }: BingoBoardProps) 
           return (
             <div key={field.id} className="flex flex-col gap-2 md:gap-3">
               <div className={`
-                h-16 md:h-20 flex items-center justify-center rounded-t-md px-2 text-center
+                h-10 md:h-12 flex items-center justify-center rounded-t-md
                 ${isComplete ? 'bg-chart-2 text-white animate-pulse-glow' : 'bg-primary text-primary-foreground'}
-                font-display font-bold text-xs md:text-sm leading-tight
+                font-display font-bold text-xs md:text-sm
               `}>
-                {field.fullName}
+                {field.name}
               </div>
               {fieldSubjects.map((subject) => (
                 <BingoCell
