@@ -1,5 +1,5 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Subject } from "@/data/gameData";
+import { Subject, fields } from "@/data/gameData";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
@@ -24,6 +24,8 @@ export default function QuestionModal({ open, onClose, subject, onAnswer }: Ques
   const Icon = subject.icon;
   const isCorrect = selectedAnswer === subject.correctAnswer;
   const isEthicalHacking = subject.id === 'ethicalhacking';
+  const fieldInfo = fields.find(f => f.id === subject.field);
+  const fieldFullName = fieldInfo?.fullName || subject.field.toUpperCase();
 
   const handleAnswerSelect = (index: number) => {
     setSelectedAnswer(index);
@@ -49,7 +51,7 @@ export default function QuestionModal({ open, onClose, subject, onAnswer }: Ques
         <DialogHeader>
           <div className="flex items-center justify-center mb-4">
             <Badge variant="default" className="bg-primary text-primary-foreground">
-              {subject.field.toUpperCase()}
+              {fieldFullName}
             </Badge>
           </div>
           <div className="flex justify-center mb-4">
