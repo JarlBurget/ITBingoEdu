@@ -12,11 +12,11 @@ export interface Subject {
 }
 
 export const fields = [
-  { id: "vs", name: "VS", fullName: "Web Specialist" },
-  { id: "uxui", name: "UX/UI", fullName: "User Experience & User Interface" },
+  { id: "vs", name: "VS", fullName: "Noorem tarkvaraarendaja" },
+  { id: "uxui", name: "UX/UI", fullName: "UX/UI disaini nooremspetsialist" },
   { id: "ita", name: "ITA", fullName: "IT Developer" },
-  { id: "its", name: "ITS", fullName: "IT Systems Specialist" },
-  { id: "dt", name: "DT", fullName: "Digital & Sustainable Technologies" },
+  { id: "its", name: "ITS", fullName: "IT-süsteemide nooremspetsialist" },
+  { id: "dt", name: "DT", fullName: "Kestlikud tehnoloogiad" },
 ];
 
 export const subjects: Subject[] = [
@@ -26,7 +26,7 @@ export const subjects: Subject[] = [
     name: "Java",
     icon: Coffee,
     description: "Learn object-oriented programming with Java, one of the most popular programming languages worldwide.",
-    question: "What does JVM stand for in Java?",
+    question: "What does JVM stand for in Java? 💻",
     answers: ["Java Virtual Machine", "Java Variable Manager", "Java Version Module"],
     correctAnswer: 0,
     field: "vs"

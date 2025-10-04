@@ -1,5 +1,4 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface AboutModalProps {
@@ -12,7 +11,7 @@ export default function AboutModal({ open, onClose }: AboutModalProps) {
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent className="max-w-2xl">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-display font-bold text-primary">About VOCO</DialogTitle>
+          <DialogTitle className="text-2xl font-display font-bold text-primary">Meist</DialogTitle>
           <Button
             variant="ghost"
             size="icon"
@@ -20,28 +19,31 @@ export default function AboutModal({ open, onClose }: AboutModalProps) {
             onClick={onClose}
             data-testid="button-close-about"
           >
-            <X className="h-4 w-4" />
+            
           </Button>
         </DialogHeader>
         <div className="space-y-4 pt-4">
           <p className="text-base leading-relaxed">
-            VOCO Tartu Vocational College is a leading educational institution in Estonia, 
-            dedicated to providing high-quality vocational education in information technology 
-            and digital fields.
+            Tartu Rakendusliku Kolledži IT-eriala pakub kaasaegset ja praktilist haridust, 
+            mis ühendab teoreetilised teadmised ning praktilised oskused, 
+            valmistades tudengeid ette edukaks karjääriks infotehnoloogia ja digivaldkonna 
+            mitmekesistes valdkondades.
           </p>
           <p className="text-base leading-relaxed">
-            Our IT programs prepare students for successful careers in:
+            Meie kolledžis saab õppida järgmisi IT- ja digivaldkonna erialasid.:
           </p>
           <ul className="space-y-2 pl-6">
-            <li className="list-disc"><strong>Web Development</strong> - Create modern web applications</li>
-            <li className="list-disc"><strong>UX/UI Design</strong> - Design beautiful user experiences</li>
-            <li className="list-disc"><strong>IT Development</strong> - Build scalable software solutions</li>
-            <li className="list-disc"><strong>IT Systems</strong> - Manage and secure IT infrastructure</li>
-            <li className="list-disc"><strong>Digital Technologies</strong> - Explore AI, robotics, and sustainable tech</li>
+            <li className="list-disc"><strong>Noorem tarkvaraarendaja</strong> - Kirjutada koodi ja luua toimivaid tarkvaralahendusi alates veebilehtedest kuni äppideniW</li>
+            <li className="list-disc"><strong>UX/UI disaini nooremspetsialist</strong> - Loo kasutajasõbralikke ja visuaalselt köitvaid digilahendusi, ühendades tehnilised teadmised, loovuse ja inimkeskse mõtlemise</li>
+            <li className="list-disc"><strong>IT AKADEEMIA</strong> - Build scalable software solutions</li>
+            <li className="list-disc"><strong>IT-süsteemide nooremspetsialist</strong> - Õpid haldama arvutivõrke, kasutama IT-vahendeid ja lahendama tehnilisi probleeme loogilise mõtlemise ja süsteemsusega</li>
+            <li className="list-disc"><strong>Kestlikud tehnoloogiad</strong> - Alates 3D-mudelitest kuni tehisintellekti ja kestliku arengu rakendusteni</li>
           </ul>
           <p className="text-base leading-relaxed text-muted-foreground">
-            Through interactive learning experiences like IT Bingo, we help students discover 
-            their passion and find the perfect IT career path.
+            Selle interaktiivse mängu kaudu aitame õpilastel avastada oma huve 
+            IT-valdkonnas ja leida just neile kõige sobivam karjäär. 
+            Mäng pakub lõbusaid ülesandeid ja uusi teadmisi, mis aitavad paremini mõista erinevaid 
+            IT-erialasid ja töörolle.
           </p>
         </div>
       </DialogContent>

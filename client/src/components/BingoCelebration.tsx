@@ -51,7 +51,7 @@ export default function BingoCelebration({ open, onClose, fieldName }: BingoCele
               BINGO!
             </h2>
             <p className="text-xl md:text-2xl font-semibold">
-              Your best matching study field is
+              Tundub, et sinust tuleb
             </p>
             <div className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-full">
               <p className="text-2xl md:text-3xl font-display font-bold">
@@ -61,8 +61,8 @@ export default function BingoCelebration({ open, onClose, fieldName }: BingoCele
           </div>
 
           <p className="text-muted-foreground max-w-md mx-auto">
-            Congratulations! Based on your interests, this field might be perfect for you. 
-            Explore more subjects to discover other possibilities!
+            Bravissimo! Sinu vastuste põhjal võib see valdkond just sulle sobida. 
+            Lahenda edasi, et veenduda ja avastada teisi võimalusi!
           </p>
 
           <Button
@@ -71,7 +71,7 @@ export default function BingoCelebration({ open, onClose, fieldName }: BingoCele
             className="mt-4"
             data-testid="button-close-celebration"
           >
-            Continue Playing
+            Mängi edasi
           </Button>
         </div>
       </DialogContent>

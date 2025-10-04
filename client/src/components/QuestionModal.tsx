@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
 import { Check, X } from "lucide-react";
-import happyTimo from "@assets/generated_images/Happy_Timo_character_1cdec06b.png";
-import angryTimo from "@assets/generated_images/Angry_Timo_character_f40fdf41.png";
+import happyTimo from "@assets/generated_images/Happy_timo.avif";
+import angryTimo from "@assets/generated_images/Angry_timo.avif";
 
 interface QuestionModalProps {
   open: boolean;
@@ -34,7 +34,7 @@ export default function QuestionModal({ open, onClose, subject, onAnswer }: Ques
     
     if (isEthicalHacking) {
       setShowEasterEgg(true);
-      setTimeout(() => setShowEasterEgg(false), 2000);
+      setTimeout(() => setShowEasterEgg(false), 3000);
     }
     
     setTimeout(() => {
@@ -42,7 +42,7 @@ export default function QuestionModal({ open, onClose, subject, onAnswer }: Ques
       setSelectedAnswer(null);
       setShowFeedback(false);
       onClose();
-    }, 1500);
+    }, 3000);
   };
 
   return (
@@ -99,12 +99,21 @@ export default function QuestionModal({ open, onClose, subject, onAnswer }: Ques
         </div>
 
         {showEasterEgg && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center pointer-events-none">
+          <div className="fixed inset-0 z-50 flex flex-col items-center justify-center pointer-events-none">
             <img
               src={isCorrect ? happyTimo : angryTimo}
               alt="Timo"
-              className={`w-48 h-48 rounded-full shadow-2xl ${isCorrect ? 'animate-bounce-in' : 'animate-shake'}`}
+              className={`w-68 h-68 rounded-full shadow-2xl ${
+                isCorrect ? 'animate-bounce-in' : 'animate-shake'
+              }`}
             />
+            <div className="mt-4 bg-black text-white px-4 py-2 rounded-2xl shadow-lg max-w-xs text-center">
+              <p className="text-base font-semibold">
+                {isCorrect
+                  ? "Timo on sinu üle väga uhke"
+                  : "Timo on sinus väga pettunud"}
+              </p>
+            </div>
           </div>
         )}
       </DialogContent>

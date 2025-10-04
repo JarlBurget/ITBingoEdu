@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Play, Video, Info } from "lucide-react";
 import VideoModal from "@/components/VideoModal";
 import AboutModal from "@/components/AboutModal";
-import vocoLogo from "@assets/generated_images/VOCO_college_logo_design_4e979c16.png";
+import vocoLogo from "@assets/generated_images/voco_logo.png";
 
 export default function Home() {
   const [, setLocation] = useLocation();
@@ -22,10 +22,10 @@ export default function Home() {
             data-testid="img-voco-logo"
           />
           <h1 className="text-4xl md:text-5xl font-display font-bold text-primary">
-            IT Bingo
+            VOCO BINGO
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground">
-            Discover your perfect IT study field at VOCO
+            Avasta oma ideaalne IT-õppevaldkond VOCO-s
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function Home() {
             data-testid="button-play"
           >
             <Play className="w-5 h-5 mr-2" />
-            Play IT Bingo
+            Mängi
           </Button>
 
           <Button
@@ -48,7 +48,7 @@ export default function Home() {
             data-testid="button-video"
           >
             <Video className="w-5 h-5 mr-2" />
-            Watch Video
+            Video
           </Button>
 
           <Button
@@ -59,7 +59,7 @@ export default function Home() {
             data-testid="button-about"
           >
             <Info className="w-5 h-5 mr-2" />
-            About VOCO
+            Lisaks
           </Button>
         </div>
       </div>

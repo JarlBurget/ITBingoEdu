@@ -97,10 +97,10 @@ export default function Game() {
                 data-testid="button-back"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Home
+                Tagasi
               </Button>
               <h1 className="text-2xl md:text-4xl font-display font-bold text-primary">
-                IT Bingo
+                Voco Bingo
               </h1>
               <div className="w-24 md:w-32" />
             </div>
