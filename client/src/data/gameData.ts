@@ -26,7 +26,7 @@ export const subjects: Subject[] = [
     name: "Java",
     icon: Coffee,
     description: "Learn object-oriented programming with Java, one of the most popular programming languages worldwide.",
-    question: "What does JVM stand for in Java? 💻",
+    question: "What does JVM stand for in Java? ",
     answers: ["Java Virtual Machine", "Java Variable Manager", "Java Version Module"],
     correctAnswer: 0,
     field: "vs"
