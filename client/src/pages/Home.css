@@ -1,0 +1,152 @@
+.home-container {
+    position: relative;
+    min-height: 100vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    overflow: hidden;
+    font-family: 'Montserrat', sens-serif;
+    }
+
+.home-oppekava {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:300px;
+    height: auto;
+}
+
+.home-pattern {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 250px;
+    height: auto;
+}
+
+.home-logo {
+    height: 100px;
+}
+
+.home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.home-subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: bold;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.play-btn {
+  background-color: #20c4f4 !important;
+}
+
+.video-btn {
+  background-color: #a1aec5 !important;
+}
+
+.info-btn {
+  background-color: #ffffff !important;
+}
+
+.play-btn,
+.video-btn,
+.info-btn {
+    border: none !important; /* Eemalda ääred */
+    color: black !important; /* Tekst mustaks */
+    font-family: 'Montserrat', sans-serif !important; /* Montserrat font */
+    font-size: 16px !important; /* Teksti suurus */
+    font-weight: 700 !important; /* Bold */
+    text-transform: none !important; /* Ei muuda teksti automaatselt uppercase */
+}
+@media (max-width: 768px) {
+    .home-container {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-oppekava {
+        width: 150px;
+    }
+
+    .home-pattern {
+        width: 120px;
+    }
+
+    .home-logo {
+        height: 80px;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-subtitle {
+        font-size: 20px;
+        white-space: normal;
+    }
+
+    .home-buttons {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    .play-btn,
+    .video-btn,
+    .info-btn {
+        font-size: 14px !important;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 1.5rem;
+    }
+
+    .home-subtitle {
+        font-size: 16px;
+    }
+
+    .home-logo {
+        height: 60px;
+    }
+
+    .home-oppekava {
+        width: 100px;
+    }
+
+    .home-pattern {
+        width: 80px;
+    }
+
+    .home-buttons {
+        gap: 0.8rem;
+    }
+
+    .play-btn,
+    .video-btn,
+    .info-btn {
+        font-size: 12px !important;
+        padding: 8px;
+    }
+}
