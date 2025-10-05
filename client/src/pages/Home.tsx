@@ -54,27 +54,29 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 max-w-md mx-auto">
-          <Button
-            size="lg"
-            className="w-full h-14 text-base font-semibold"
-            onClick={() => setLocation("/game")}
-            data-testid="button-play"
-          >
-            <Play className="w-5 h-5 mr-2" />
-            Mängi
-          </Button>
+<Button
+  size="lg"
+  variant="secondary"
+  className="w-full h-12 text-base video-btn"
+  onClick={() => setShowVideo(true)}
+>
+  <Video className="w-5 h-5 mr-2" />
+  Video
+</Button>
 
-          <Button
-            size="lg"
-            variant="secondary"
-            className="w-full h-12 text-base"
-            onClick={() => setShowVideo(true)}
-            data-testid="button-video"
-          >
-            <Video className="w-5 h-5 mr-2" />
-            Video
-          </Button>
+<Button
+  size="lg"
+  variant="outline"
+  className="w-full h-12 text-base info-btn"
+  onClick={() => setShowAbout(true)}
+>
+  <Info className="w-5 h-5 mr-2" />
+  Lisaks
+</Button>
+<div className="text">
+    <p className="home-subtitle">
+Mängi end kooli!
+        </p>
 
           <Button
             size="lg"
