@@ -12,7 +12,7 @@ export default function Home() {
   const [showAbout, setShowAbout] = useState(false);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-primary/5 to-background px-4">
+    <div className="min-h-screen flex items-center justify-center bg-voco px-4">
       <div className="w-full max-w-2xl text-center space-y-12">
         <div className="space-y-6">
           <img

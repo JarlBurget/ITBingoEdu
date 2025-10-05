@@ -6,6 +6,8 @@ import { useState } from "react";
 import { Check, X } from "lucide-react";
 import happyTimo from "@assets/generated_images/Happy_timo.avif";
 import angryTimo from "@assets/generated_images/Angry_timo.avif";
+import "@/styles/questionModal.css";
+
 
 interface QuestionModalProps {
   open: boolean;
@@ -47,7 +49,7 @@ export default function QuestionModal({ open, onClose, subject, onAnswer }: Ques
 
   return (
     <Dialog open={open} onOpenChange={onClose}>
-      <DialogContent className="max-w-lg">
+      <DialogContent className="max-w-lg modal-background">
         <DialogHeader>
           <div className="flex items-center justify-center mb-4">
             <Badge variant="default" className="bg-primary text-primary-foreground">
