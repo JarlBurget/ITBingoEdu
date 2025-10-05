@@ -1,9 +1,8 @@
-import { Coffee, Globe, Zap, Database, Smartphone, Search, Ruler, TestTube, Palette, Settings, Cloud, Monitor, HardDrive, Hash, Shield, Network, Code, Layers, Cog, Wrench, Bot, Brain, FolderOpen, Flame } from "lucide-react";
 
 export interface Subject {
   id: string;
   name: string;
-  icon: any;
+  icon: React.FC<{ className?: string }>;
   description: string;
   question: string;
   answers: string[];
@@ -24,7 +23,7 @@ export const subjects: Subject[] = [
   {
     id: "java",
     name: "Java",
-    icon: Coffee,
+    icon: "☕",
     description: "Learn object-oriented programming with Java, one of the most popular programming languages worldwide.",
     question: "What does JVM stand for in Java? ",
     answers: ["Java Virtual Machine", "Java Variable Manager", "Java Version Module"],
@@ -34,7 +33,7 @@ export const subjects: Subject[] = [
   {
     id: "htmlcss",
     name: "HTML/CSS",
-    icon: Globe,
+    icon: "🌐",
     description: "Master the fundamental building blocks of web development - HTML for structure and CSS for styling.",
     question: "Which HTML tag is used to define an internal stylesheet?",
     answers: ["<script>", "<style>", "<css>"],
@@ -44,7 +43,7 @@ export const subjects: Subject[] = [
   {
     id: "javascript",
     name: "JavaScript",
-    icon: Zap,
+    icon: "⚡",
     description: "Make websites interactive and dynamic with JavaScript, the language of the web.",
     question: "Which keyword is used to declare a constant in JavaScript?",
     answers: ["var", "let", "const"],
@@ -54,7 +53,7 @@ export const subjects: Subject[] = [
   {
     id: "databases",
     name: "Databases",
-    icon: Database,
+    icon: "🗄️",
     description: "Understand how to store, retrieve, and manage data using database systems.",
     question: "What does SQL stand for?",
     answers: ["Structured Query Language", "Simple Question Logic", "System Quality Level"],
@@ -64,7 +63,7 @@ export const subjects: Subject[] = [
   {
     id: "mobileapp",
     name: "Mobile App",
-    icon: Smartphone,
+    icon: "📱",
     description: "Build mobile applications for iOS and Android platforms.",
     question: "Which framework is used for cross-platform mobile development?",
     answers: ["React Native", "Only Java", "Only Swift"],
@@ -76,7 +75,7 @@ export const subjects: Subject[] = [
   {
     id: "userresearch",
     name: "User Research",
-    icon: Search,
+    icon: "🔍",
     description: "Learn to understand user needs through research methods and user testing.",
     question: "What is the primary goal of user research?",
     answers: ["Make it look pretty", "Understand user needs", "Increase code speed"],
@@ -86,7 +85,7 @@ export const subjects: Subject[] = [
   {
     id: "wireframing",
     name: "Wireframing",
-    icon: Ruler,
+    icon: "📐",
     description: "Create blueprints for digital products using wireframing techniques.",
     question: "What is a wireframe in UX design?",
     answers: ["A programming language", "A low-fidelity layout sketch", "A database schema"],
@@ -96,7 +95,7 @@ export const subjects: Subject[] = [
   {
     id: "prototyping",
     name: "Prototyping",
-    icon: Smartphone,
+    icon: "🧩",
     description: "Build interactive prototypes to test and validate design ideas.",
     question: "What tool is commonly used for prototyping?",
     answers: ["Excel", "Figma", "Notepad"],
@@ -106,7 +105,7 @@ export const subjects: Subject[] = [
   {
     id: "testing",
     name: "Testing",
-    icon: TestTube,
+    icon: "🧪",
     description: "Validate designs through usability testing and user feedback.",
     question: "What is A/B testing used for?",
     answers: ["Comparing two design versions", "Testing alphabets", "Audio and video testing"],
@@ -116,7 +115,7 @@ export const subjects: Subject[] = [
   {
     id: "design",
     name: "Design",
-    icon: Palette,
+    icon: "🎨",
     description: "Master visual design principles, color theory, and typography.",
     question: "What does UI stand for?",
     answers: ["Universal Internet", "User Interface", "Unified Information"],
@@ -128,7 +127,7 @@ export const subjects: Subject[] = [
   {
     id: "microservices",
     name: "Microservices",
-    icon: Settings,
+    icon: "🧩",
     description: "Learn to build scalable applications using microservices architecture.",
     question: "What is a microservice?",
     answers: ["A small independent service", "A tiny computer", "A mini website"],
@@ -138,7 +137,7 @@ export const subjects: Subject[] = [
   {
     id: "cloudservices",
     name: "Cloud Services",
-    icon: Cloud,
+    icon: "☁️",
     description: "Master cloud computing platforms like AWS, Azure, and Google Cloud.",
     question: "What does 'cloud computing' mean?",
     answers: ["Weather forecasting", "Remote server storage and computing", "Air quality monitoring"],
@@ -148,7 +147,7 @@ export const subjects: Subject[] = [
   {
     id: "operatingsystems",
     name: "Operating Systems",
-    icon: Monitor,
+    icon: "💻",
     description: "Understand how operating systems manage hardware and software resources.",
     question: "Which is NOT an operating system?",
     answers: ["Linux", "Windows", "Chrome"],
@@ -158,7 +157,7 @@ export const subjects: Subject[] = [
   {
     id: "digitaltech",
     name: "Digital Technology",
-    icon: HardDrive,
+    icon: "💾",
     description: "Explore the latest digital technologies and their applications.",
     question: "What is IoT?",
     answers: ["Internet of Things", "Institute of Technology", "Index of Terms"],
@@ -168,7 +167,7 @@ export const subjects: Subject[] = [
   {
     id: "nosql",
     name: "NoSQL",
-    icon: Hash,
+    icon: "🗃️",
     description: "Learn non-relational database systems for modern applications.",
     question: "Which is a NoSQL database?",
     answers: ["MySQL", "MongoDB", "PostgreSQL"],
@@ -180,7 +179,7 @@ export const subjects: Subject[] = [
   {
     id: "ethicalhacking",
     name: "Ethical Hacking",
-    icon: Shield,
+    icon: "🛡️",
     description: "Learn cybersecurity and ethical hacking to protect systems from threats.",
     question: "What is penetration testing?",
     answers: ["Breaking things randomly", "Authorized security testing", "Installing software"],
@@ -190,7 +189,7 @@ export const subjects: Subject[] = [
   {
     id: "networks",
     name: "Computer Networks",
-    icon: Network,
+    icon: "🌐",
     description: "Master network protocols, architecture, and administration.",
     question: "What does IP stand for in networking?",
     answers: ["Internet Protocol", "Internal Program", "Input Process"],
@@ -200,7 +199,7 @@ export const subjects: Subject[] = [
   {
     id: "progbasics",
     name: "Programming Basics",
-    icon: Code,
+    icon: "👨‍💻",
     description: "Build a strong foundation in programming fundamentals.",
     question: "What is a variable in programming?",
     answers: ["A storage container for data", "A type of virus", "A network device"],
@@ -210,7 +209,7 @@ export const subjects: Subject[] = [
   {
     id: "frameworks",
     name: "IT Frameworks",
-    icon: Layers,
+    icon: "🏗️",
     description: "Learn industry-standard IT frameworks and best practices.",
     question: "What is ITIL?",
     answers: ["IT Infrastructure Library", "Internet Technology Link", "Italian Language"],
@@ -220,7 +219,7 @@ export const subjects: Subject[] = [
   {
     id: "automation",
     name: "Automation",
-    icon: Cog,
+    icon: "⚙️",
     description: "Automate repetitive tasks using scripting and automation tools.",
     question: "What is the benefit of automation?",
     answers: ["Makes work slower", "Increases efficiency", "Adds complexity"],
@@ -232,7 +231,7 @@ export const subjects: Subject[] = [
   {
     id: "mechanics",
     name: "Mechanics",
-    icon: Wrench,
+    icon: "⚙️",
     description: "Understand mechanical systems and their integration with digital technology.",
     question: "What field combines mechanics with electronics?",
     answers: ["Mechatronics", "Biology", "Chemistry"],
@@ -242,7 +241,7 @@ export const subjects: Subject[] = [
   {
     id: "robotics",
     name: "Robotics",
-    icon: Bot,
+    icon: "🤖",
     description: "Build and program robots for various applications.",
     question: "What is a robot?",
     answers: ["A programmable machine", "A computer game", "A mobile app"],
@@ -252,7 +251,7 @@ export const subjects: Subject[] = [
   {
     id: "ai",
     name: "Artificial Intelligence",
-    icon: Brain,
+    icon: "🧠",
     description: "Explore machine learning and AI technologies.",
     question: "What is machine learning?",
     answers: ["Teaching humans", "AI learning from data", "Computer hardware"],
@@ -262,7 +261,7 @@ export const subjects: Subject[] = [
   {
     id: "datamanagement",
     name: "Data Management",
-    icon: FolderOpen,
+    icon: "📂",
     description: "Learn to organize, store, and analyze large datasets.",
     question: "What is Big Data?",
     answers: ["Large files only", "Extremely large datasets", "Big computers"],
@@ -272,7 +271,7 @@ export const subjects: Subject[] = [
   {
     id: "soldering",
     name: "Soldering",
-    icon: Flame,
+    icon: "🔥",
     description: "Master electronic circuit assembly and repair techniques.",
     question: "What is soldering used for?",
     answers: ["Cooking", "Joining electronic components", "Cutting metal"],
@@ -280,6 +279,7 @@ export const subjects: Subject[] = [
     field: "dt"
   },
 ];
+
 
 export interface Quest {
   id: string;

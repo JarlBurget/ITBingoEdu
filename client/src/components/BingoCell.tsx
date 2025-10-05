@@ -9,8 +9,6 @@ interface BingoCellProps {
 }
 
 export default function BingoCell({ subject, status, onClick }: BingoCellProps) {
-  const Icon = subject.icon;
-  
   const bgColor = 
     status === 'correct' ? 'bg-chart-2/15 border-chart-2' :
     status === 'wrong' ? 'bg-destructive/15 border-destructive' :
@@ -34,7 +32,11 @@ export default function BingoCell({ subject, status, onClick }: BingoCellProps) 
           `}
           data-testid={`cell-${subject.id}`}
         >
-          <Icon className={`w-8 h-8 md:w-10 md:h-10 ${iconColor}`} />
+          {/* 🟢 Updated icon rendering */}
+          <span className={`text-3xl md:text-4xl ${iconColor}`}>
+            {subject.icon}
+          </span>
+
           {status === 'correct' && (
             <Check className="w-4 h-4 md:w-5 md:h-5 text-chart-2 absolute top-1 right-1" />
           )}

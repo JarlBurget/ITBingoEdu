@@ -55,7 +55,9 @@ export default function QuestionModal({ open, onClose, subject, onAnswer }: Ques
             </Badge>
           </div>
           <div className="flex justify-center mb-4">
-            <Icon className="w-16 h-16 md:w-20 md:h-20 text-primary" />
+            <span className="text-6xl md:text-7xl text-primary">
+              {subject.icon}
+            </span>
           </div>
           <DialogTitle className="text-center text-xl md:text-2xl font-display">
             {subject.name}
