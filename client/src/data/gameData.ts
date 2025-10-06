@@ -2,7 +2,7 @@
 export interface Subject {
   id: string;
   name: string;
-  icon: React.FC<{ className?: string }>;
+  icon: string;
   description: string;
   question: string;
   answers: string[];
