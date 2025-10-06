@@ -11,13 +11,14 @@ export function useSound() {
     gainNode.connect(audioContext.destination);
     
     switch (type) {
-      case 'bing':
+    /*  case 'bing':
         oscillator.frequency.value = 800;
         gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
         gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
         oscillator.start(audioContext.currentTime);
         oscillator.stop(audioContext.currentTime + 0.3);
         break;
+        */
       case 'ding':
         oscillator.frequency.value = 1200;
         gainNode.gain.setValueAtTime(0.4, audioContext.currentTime);

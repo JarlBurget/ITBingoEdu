@@ -128,7 +128,7 @@ export default function Game() {
               style={{ backgroundColor: "#20C4F4", borderColor: "#20C4F4" }}
             >
               <h1
-                className="text-6xl md:text-8xl font-bold font-display"
+                className="text-5xl md:text-8xl font-bold font-display"
                 style={{
                   color: "black",
                   WebkitTextStroke: "2px white",
