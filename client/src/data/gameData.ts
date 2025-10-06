@@ -299,8 +299,8 @@ export interface GameState {
 export const quests: Quest[] = [
   {
     id: "explore",
-    title: "Explorer",
-    description: "Open at least one subject from each field",
+    title: "Avasta",
+    description: "Ava igast erialast vähemalt 1 aine",
     checkComplete: (state) => {
       const fieldsWithAnswers = new Set<string>();
       state.answeredSubjects.forEach(subjectId => {
@@ -313,19 +313,19 @@ export const quests: Quest[] = [
   {
     id: "bingo",
     title: "BINGO!",
-    description: "Achieve at least one BINGO",
+    description: "Saavuta bingo",
     checkComplete: (state) => state.completedFields.size >= 1
   },
   {
     id: "easter",
-    title: "Easter Egg Hunter",
-    description: "Discover the hidden Easter Egg",
+    title: "Easter Egg",
+    description: "Avasta üllatus külaline",
     checkComplete: (state) => state.easterEggFound
   },
   {
     id: "guru",
     title: "IT Guru",
-    description: "Answer 15+ questions correctly",
+    description: "Vasta 15 küsimust korrektselt",
     checkComplete: (state) => state.correctAnswers.size >= 15
   },
 ];

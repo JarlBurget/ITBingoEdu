@@ -16,12 +16,12 @@ export default function QuestPanel({ quests, gameState }: QuestPanelProps) {
 
   return (
     <div className="w-full lg:w-72 p-4 space-y-4">
-      <h3 className="text-xl font-display font-bold text-white">Your Quests</h3>
+      <h3 className="text-xl font-display font-bold text-white">Sinu ülesanded</h3>
 
       {/* ✅ Overall Quest Progress */}
       <Card className="p-3 bg-secondary/40 border-secondary/50">
         <p className="text-sm font-medium text-white mb-2">
-          Overall Progress: {completedCount}/{quests.length}
+          Ülesandeid lahendatud: {completedCount}/{quests.length}
         </p>
         <Progress value={overallProgress} className="h-2" />
       </Card>
