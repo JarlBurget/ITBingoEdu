@@ -72,14 +72,18 @@ export default function QuestPanel({ quests, gameState }: QuestPanelProps) {
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
-                    <h4 className="font-semibold text-sm">{quest.title}</h4>
+                    <h4 className={`font-semibold text-sm ${
+                        isComplete ? "text-quest-completeText" : "text-white"
+                    }`}>{quest.title}</h4>
                     {isITGuru && (
                       <Badge variant="default" className="bg-chart-3">
                         Legendary
                       </Badge>
                     )}
                   </div>
-                  <p className="text-xs text-muted-foreground">
+                  <p className={`text-xs ${
+                      isComplete ? "text-quest-completeText/80" : "text-muted-foreground"
+                  }`}>
                     {quest.description}
                   </p>
 
