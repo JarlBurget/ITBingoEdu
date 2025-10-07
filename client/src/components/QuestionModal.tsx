@@ -47,7 +47,7 @@ export default function QuestionModal({ open, onClose, subject, onAnswer }: Ques
 
   return (
     <Dialog open={open} onOpenChange={onClose}>
-      <DialogContent className="max-w-lg">
+      <DialogContent className="w-[90vw] max-w-sm md:max-w-md lg:max-w-lg">
         <DialogHeader>
           <div className="flex items-center justify-center mb-4">
             <Badge variant="default" className="bg-primary text-primary-foreground">
