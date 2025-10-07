@@ -47,7 +47,7 @@ export default function QuestionModal({ open, onClose, subject, onAnswer }: Ques
 
   return (
     <Dialog open={open} onOpenChange={onClose}>
-      <DialogContent className="max-w-lg">
+      <DialogContent className="w-[90vw] max-w-sm md:max-w-md lg:max-w-lg overflow-hidden">
         <DialogHeader>
           <div className="flex items-center justify-center mb-4">
             <Badge variant="default" className="bg-primary text-primary-foreground">
@@ -67,7 +67,7 @@ export default function QuestionModal({ open, onClose, subject, onAnswer }: Ques
           </p>
         </DialogHeader>
 
-        <div className="space-y-4 pt-4">
+        <div className="space-y-4 pt-4 min-w-0">
           <h4 className="font-semibold text-base md:text-lg">{subject.question}</h4>
           <div className="space-y-2">
             {subject.answers.map((answer, index) => {
