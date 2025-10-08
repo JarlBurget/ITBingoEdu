@@ -134,7 +134,7 @@ export default function Game() {
                   WebkitTextStroke: "2px white",
                 }}
               >
-                VOCO BINGO
+                IT-BINGO
               </h1>
               <BingoBoard gameState={gameState} onCellClick={handleCellClick} />
             </div>

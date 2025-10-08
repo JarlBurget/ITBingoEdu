@@ -229,55 +229,76 @@ export const subjects: Subject[] = [
 
   // DT (Digital & Sustainable Technologies)
   {
-    id: "mechanics",
-    name: "Mechanics",
-    icon: "⚙️",
-    description: "Understand mechanical systems and their integration with digital technology.",
-    question: "What field combines mechanics with electronics?",
-    answers: ["Mechatronics", "Biology", "Chemistry"],
-    correctAnswer: 0,
-    field: "dt"
-  },
-  {
-    id: "robotics",
-    name: "Robotics",
-    icon: "🤖",
-    description: "Build and program robots for various applications.",
-    question: "What is a robot?",
-    answers: ["A programmable machine", "A computer game", "A mobile app"],
-    correctAnswer: 0,
-    field: "dt"
-  },
-  {
-    id: "ai",
-    name: "Artificial Intelligence",
-    icon: "🧠",
-    description: "Explore machine learning and AI technologies.",
-    question: "What is machine learning?",
-    answers: ["Teaching humans", "AI learning from data", "Computer hardware"],
-    correctAnswer: 1,
-    field: "dt"
-  },
-  {
-    id: "datamanagement",
-    name: "Data Management",
-    icon: "📂",
-    description: "Learn to organize, store, and analyze large datasets.",
-    question: "What is Big Data?",
-    answers: ["Large files only", "Extremely large datasets", "Big computers"],
-    correctAnswer: 1,
-    field: "dt"
-  },
-  {
-    id: "soldering",
-    name: "Soldering",
-    icon: "🔥",
-    description: "Master electronic circuit assembly and repair techniques.",
-    question: "What is soldering used for?",
-    answers: ["Cooking", "Joining electronic components", "Cutting metal"],
-    correctAnswer: 1,
-    field: "dt"
-  },
+  id: "mechanics",
+  name: "Mehaanika alused",
+  icon: "⚙️",
+  description: "Õpid, kuidas masinad töötavad ja millest need koosnevad. Tutvud erinevate masinaelementidega ning õpid neid kasutama vastavalt ülesandele. Teed lihtsamaid praktilisi töid, et mõista mehaanika põhimõtteid.",
+  question: "Milleks kasutatakse masinaelemente?",
+  answers: [
+    "Masina osade ühendamiseks ja liikumise tagamiseks",
+    "Masina välimuse ja kujunduse muutmiseks",
+    "Elektritarbimise juhtimiseks töö ajal"
+  ],
+  correctAnswer: 0,
+  field: "dt"
+},
+{
+  id: "smarthome",
+  name: "Tark maja",
+  icon: "🏠",
+  description: "Õpid, kuidas hoone automaatikasüsteemid juhivad valgustust, kütet ja turvalisust. Katsetad nutirakendusi ja seadistad süsteeme energiasäästu ja mugavuse parandamiseks.",
+  question: "Mis on targa maja süsteemide peamine eesmärk?",
+  answers: [
+    "Hoone välimuse muutmine kaasaegsemaks",
+    "Automatiseerida ja optimeerida hoone funktsioone mugavuse ja energiasäästu nimel",
+    "Täielikult asendada inimesed hoone hooldamisel"
+  ],
+  correctAnswer: 1,
+  field: "dt"
+},
+{
+  id: "ai",
+  name: "AI tööstuses",
+  icon: "🧠",
+  description: "Õpid, kuidas tehisintellekt aitab automatiseerida tööstusprotsesse ja teha targemaid otsuseid. Tutvud masinõppe ja andmetöötluse põhimõtetega.",
+  question: "Mida tähendab „masinõpe“ tehisintellekti kontekstis?",
+  answers: [
+    "Inimese õpetamist arvutit parandama",
+    "Arvuti õppimist andmete põhjal mustreid ära tundma ja otsuseid tegema",
+    "Masinate füüsilist hooldamist tööstuses"
+  ],
+  correctAnswer: 1,
+  field: "dt"
+},
+{
+  id: "datamanagement",
+  name: "Digitaalsete andmete haldamine",
+  icon: "📂",
+  description: "Õpid, kuidas andmeid turvaliselt koguda, säilitada ja töödelda. Katsetad tööriistu nagu PowerBI ja Python ning õpid andmetega vastutustundlikult töötama.",
+  question: "Miks on andmete turvaline säilitamine oluline?",
+  answers: [
+    "Et andmeid oleks lihtne kustutada ja muuta",
+    "Et arvuti töötaks kiiremini ja sujuvamalt",
+    "Et andmed ei satuks valedesse kätesse ja oleksid kaitstud"
+  ],
+  correctAnswer: 2,
+  field: "dt"
+},
+{
+  id: "soldering",
+  name: "Jootmistööd",
+  icon: "🔥",
+  description: "Õpid metallide ühendamist jootmise teel, kasutades erinevaid joodiseid ja tööriistu. Harjutad ohutuid töövõtteid ja kvaliteetsete jootekohtade tegemist.",
+  question: "Mis on jootmise peamine erinevus keevitamisest?",
+  answers: [
+    "Jootmisel ei sulatata põhimetalli, vaid kasutatakse joodist",
+    "Keevitamisel kasutatakse madalamat temperatuuri",
+    "Jootmisel kasutatakse plastikut ja keevitamisel metalli"
+  ],
+  correctAnswer: 0,
+  field: "dt"
+},
+
 ];
 
 
