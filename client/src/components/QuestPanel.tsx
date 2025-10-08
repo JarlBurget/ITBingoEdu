@@ -94,7 +94,7 @@ export default function QuestPanel({ quests, gameState }: QuestPanelProps) {
                       <p className="text-[10px] text-muted-foreground mt-1 text-right">
                         {quest.id === "explore"
                           ? `${Math.round(progress / 20)}/5 Fields`
-                          : `${gameState.correctAnswers.size}/15 Correct`}
+                          : `${Math.min(gameState.correctAnswers.size, 15)}/15 Correct`}
                       </p>
                     </div>
                   )}
