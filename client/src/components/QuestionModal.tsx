@@ -42,7 +42,7 @@ export default function QuestionModal({ open, onClose, subject, onAnswer }: Ques
       setSelectedAnswer(null);
       setShowFeedback(false);
       onClose();
-    }, 3500);
+    }, 1800);
   };
 
   return (
