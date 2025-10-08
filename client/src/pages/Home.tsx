@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Play, Video, Info } from "lucide-react";
 import VideoModal from "@/components/VideoModal";
 import AboutModal from "@/components/AboutModal";
-import vocoLogo from "@assets/generated_images/voco_logo.png";
+import vocoLogo from "@assets/generated_images/logo3.svg";
 import voco_top from "@assets/generated_images/voco_top.png";
 import voco_bottom from "@assets/generated_images/voco_bottom.png";
 
@@ -58,7 +58,7 @@ export default function Home() {
           <Button
             size="lg"
             className="w-full h-14 text-base font-semibold"
-            onClick={() => setLocation("/game")}
+            onClick={() => setLocation("game")}
             data-testid="button-play"
           >
             <Play className="w-5 h-5 mr-2" />

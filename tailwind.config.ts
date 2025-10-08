@@ -81,6 +81,10 @@ export default {
           busy: "rgb(239 68 68)",
           offline: "rgb(156 163 175)",
         },
+          quest: {
+              completeText: "#FFD95A",
+          },
+
       },
       fontFamily: {
           sans: ["Montserrat", "ui-sans-serif", "system-ui", "sans-serif"],
