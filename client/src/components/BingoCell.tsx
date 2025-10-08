@@ -10,8 +10,8 @@ interface BingoCellProps {
 
 export default function BingoCell({ subject, status, onClick }: BingoCellProps) {
   const bgColor = 
-    status === 'correct' ? 'bg-chart-2/15 border-chart-2' :
-    status === 'wrong' ? 'bg-destructive/15 border-destructive' :
+    status === 'correct' ? 'bg-green-300 border-chart-2' :
+    status === 'wrong' ? 'bg-red-200 border-destructive' :
     'bg-background border-border';
   
   const iconColor =
