@@ -83,10 +83,11 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["var(--font-sans)"],
-        serif: ["var(--font-serif)"],
+          sans: ["Montserrat", "ui-sans-serif", "system-ui", "sans-serif"],
+          serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
-        display: ["Poppins", "var(--font-sans)"],
+          montserrat: ["var(--font-montserrat)"],
+        display: ["Montserrat", "Poppins", "var(--font-sans)"],
       },
       keyframes: {
         "accordion-down": {
