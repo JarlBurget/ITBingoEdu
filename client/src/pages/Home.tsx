@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Play, Video, Info } from "lucide-react";
 import VideoModal from "@/components/VideoModal";
 import AboutModal from "@/components/AboutModal";
-import vocoLogo from "@assets/generated_images/voco_logo.png";
+import vocoLogo from "@assets/generated_images/logo3.svg";
 import voco_top from "@assets/generated_images/voco_top.png";
 import voco_bottom from "@assets/generated_images/voco_bottom.png";
 
