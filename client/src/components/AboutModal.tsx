@@ -11,7 +11,6 @@ export default function AboutModal({ open, onClose }: AboutModalProps) {
       <DialogContent className="w-[90vw] max-w-2xl h-[85vh] sm:h-auto sm:max-h-[85vh] p-6 overflow-y-auto rounded">
         <DialogHeader>
           <DialogTitle className="text-2xl font-display font-bold text-primary">Meist</DialogTitle>
-          
         </DialogHeader>
         <div className="space-y-4 pt-4">
           <p className="text-base leading-relaxed">
