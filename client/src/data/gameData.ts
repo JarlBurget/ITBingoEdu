@@ -130,7 +130,7 @@ export const subjects: Subject[] = [
     icon: "🧩",
     description: "Mikroteenused on tarkvaraarenduse arhitektuuriline lähenemine, kus suur rakendus jagatakse väikesteks, iseseisvateks teenusteks. Iga teenus täidab kindlat ülesannet ja saab töötada eraldi teistest teenustest. See tähendab, et arendajad saavad teha muudatusi ühes teenuses, ilma et see mõjutaks kogu süsteemi. Samuti on lihtsam lisada uusi funktsioone või teha hooldust. Mikroteenused toetavad ka erinevaid programmeerimiskeeli, andmebaase ja tööriistu teenuse spetsiifiliselt, muutes tarkvara paindlikumaks ja skaleeritavamaks.",
     question: "Milleks mikroteenused head on?",
-    answers: ["Kõik funktsioonid töötavad ühes suures programmis", "Lihtsam arendada ja hooldada väikeseid osi ", "Tarkvara muutub keerulisemaks"],
+    answers: ["Kõik funktsioonid töötavad ühes suures programmis", "Lihtsam arendada ja hooldada väikeseid osi", "Tarkvara muutub keerulisemaks"],
     correctAnswer: 1,
     field: "ita"
   },
@@ -160,7 +160,7 @@ export const subjects: Subject[] = [
     icon: "💾",
     description: "Digitehnoloogia uurib, kuidas informatsiooni saab esitada, töödelda, salvestada ja edastada digitaalsetes seadmetes. See hõlmab arvuteid, mobiilseadmeid, andmesidevõrke ja sensoreid. Digitehnoloogia abil muudetakse analoogandmed (näiteks heli, pildid) digitaalseks kujuks, mis on arvuti jaoks arusaadav ja töödeldav. Samuti uuritakse, kuidas seadmed omavahel suhtlevad ja infot turvaliselt edastavad, võimaldades näiteks internetiühendust, digitaalseid makseid või pilveteenuseid.",
     question: "Mida uurib digitehnoloogia?",
-    answers: [" Kuidas arvutid infot töötlevad ja saadavad ", "Kuidas teha ilusat veebilehte", "Kuidas rakendust turustada"],
+    answers: ["Kuidas arvutid infot töötlevad ja saadavad ", "Kuidas teha ilusat veebilehte", "Kuidas rakendust turustada"],
     correctAnswer: 0,
     field: "ita"
   },
