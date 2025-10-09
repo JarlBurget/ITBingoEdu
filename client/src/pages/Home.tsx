@@ -47,7 +47,7 @@ export default function Home() {
             data-testid="img-voco-logo"
           />
           <h1 className="text-7xl md:text-8xl font-display font-bold text-white">
-            VOCO BINGO
+            IT-BINGO
           </h1>
           <p className="text-lg md:text-xl text-white">
             Avasta oma ideaalne IT-õppevaldkond VOCO-s
